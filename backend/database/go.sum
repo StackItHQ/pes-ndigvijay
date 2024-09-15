@@ -61,6 +61,8 @@ github.com/BurntSushi/xgb v0.0.0-20160522181843-27f122750802/go.mod h1:IVnqGOEym
 github.com/FreeLeh/GoFreeDB v1.0.1 h1:F2Oqqiv7/G6UqGXHnbSIBT15HVgi79uhsv21723TRiw=
 github.com/FreeLeh/GoFreeDB v1.0.1/go.mod h1:qIq8ZCNV4R0vBD7L6qY+fFEhmYy6dEM2cU4+MFNrWGM=
 github.com/OneOfOne/xxhash v1.2.2/go.mod h1:HSdplMjZKSmBqAxg5vPj2TmRDmfkzw+cTzAElWljhcU=
+github.com/StackItHQ/pes-ndigvijay v0.0.0-20240915005450-cd068485ee8f h1:l8j/wKE24tNzmJDNH8fPDs1Q1QDydtNf7SYJEpsl2hM=
+github.com/StackItHQ/pes-ndigvijay v0.0.0-20240915005450-cd068485ee8f/go.mod h1:rF+nyPBFDJ6XTs62fLyU63bX80hZYDcDfwKQkbDITPs=
 github.com/antihax/optional v1.0.0/go.mod h1:uupD/76wgC+ih3iEmQUL+0Ugr19nfwCT1kdvxnR2qWY=
 github.com/census-instrumentation/opencensus-proto v0.2.1/go.mod h1:f6KPmirojxKA12rnyqOA5BBL4O983OfeGPqjHWSTneU=
 github.com/cespare/xxhash v1.1.0/go.mod h1:XrSqR1VqqWfGrhpAt58auRo0WTKS1nRRg3ghfAqPWnc=

@@ -10,6 +10,7 @@ require (
 
 require (
 	cloud.google.com/go/compute v1.9.0 // indirect
+	github.com/StackItHQ/pes-ndigvijay v0.0.0-20240915005450-cd068485ee8f // indirect
 	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/google/uuid v1.3.0 // indirect
