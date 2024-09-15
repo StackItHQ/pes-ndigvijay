@@ -1,4 +1,4 @@
-module github.com/ndigvijay/database
+module github.com/StackItHQ/pes-ndigvijay/database
 
 go 1.22.5
 
