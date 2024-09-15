@@ -6,7 +6,7 @@ import (
 	// "os"
 	"sync"
 
-	"github.com/StackItHQ/pes-ndigvijay/database/models"
+	// "github.com/StackItHQ/pes-ndigvijay/database/models"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 	freedb "github.com/FreeLeh/GoFreeDB"
