@@ -45,29 +45,78 @@ func InitDB() *gorm.DB {
 // var Store *freedb.GoogleSheetRowStore
 
 // func InitSheet() {
-// 	authenticator, err := auth.NewServiceFromFile(
-// 		"../servicetoken.json",
-// 		freedb.FreeDBGoogleAuthScopes,
-// 		auth.ServiceConfig{},
-// 	)
-// 	if err != nil {
-// 		fmt.Println("Error accessing sheet", err)
-// 		return
-// 	}
+	// authenticator, err := auth.NewServiceFromFile(
+	// 	"../servicetoken.json",
+	// 	freedb.FreeDBGoogleAuthScopes,
+	// 	auth.ServiceConfig{},
+	// )
+	// if err != nil {
+	// 	fmt.Println("Error accessing sheet", err)
+	// 	return
+	// }
 
-// 	Store = freedb.NewGoogleSheetRowStore(
-// 		authenticator,
-// 		"1Bxi8B75FyzeLhCfTnk3QXoX4zMeWNdGa4Q_XbRjuQNw",
-// 		"Sheet1",
-// 		freedb.GoogleSheetRowStoreConfig{
-// 			Columns: []string{
-// 				"id",        
-// 				"name",      
-// 				"email",     
-// 				"password",  
-// 				"age",         
-// 			},
-// 		},
-// 	)
-	
+	// Store = freedb.NewGoogleSheetRowStore(
+	// 	authenticator,
+	// 	"1Bxi8B75FyzeLhCfTnk3QXoX4zMeWNdGa4Q_XbRjuQNw",
+	// 	"Sheet1",
+	// 	freedb.GoogleSheetRowStoreConfig{
+	// 		Columns: []string{     
+	// 			"name",      
+	// 			"email",     
+	// 			"password",         
+	// 		},
+	// 	},
+	// )
+// }
+
+
+// var SheetsService *sheets.Service
+
+// func InitSheet() {
+//     ctx := context.Background()
+
+//     // Initialize Google Sheets API client
+//     srv, err := sheets.NewService(ctx, option.WithCredentialsFile(credentialsFile))
+//     if err != nil {
+//         log.Fatalf("Unable to create Sheets service: %v", err)
+//     }
+//     SheetsService = srv
+
+//     // Verify the "name", "email", and "password" columns
+//     verifyColumns(ctx)
+// }
+
+// func verifyColumns(ctx context.Context) {
+//     readRange := "Sheet1!A1:D1" // Adjust the range to read the header row
+//     resp, err := SheetsService.Spreadsheets.Values.Get(spreadsheetId, readRange).Context(ctx).Do()
+//     if err != nil {
+//         log.Fatalf("Unable to read sheet: %v", err)
+//     }
+
+//     requiredColumns := map[string]bool{
+//         "name":     false,
+//         "email":    false,
+//         "password": false,
+//     }
+
+//     if len(resp.Values) > 0 {
+//         headers := resp.Values[0]
+//         for _, header := range headers {
+//             if column, ok := header.(string); ok {
+//                 if _, exists := requiredColumns[column]; exists {
+//                     requiredColumns[column] = true
+//                 }
+//             }
+//         }
+
+//         for column, present := range requiredColumns {
+//             if present {
+//                 log.Printf("Column %v is present", column)
+//             } else {
+//                 log.Printf("Column %v is missing", column)
+//             }
+//         }
+//     } else {
+//         log.Println("No headers found")
+//     }
 // }
